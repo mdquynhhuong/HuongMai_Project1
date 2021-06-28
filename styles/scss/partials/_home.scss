@@ -1,35 +1,27 @@
-header {
+// Header Section
+.homeheader {
     background-image: url(../the-restaurant-mall-assets/home-header.jpg);
-}
-
-.box1::before {
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f3c5";
-}
-.box2::before {
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0c0";
-}
-
-.box3::before {
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f15b";
-}
-
-.box4::before {
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f095";
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
 }
 
 ul {
+    margin: 0;
     display: flex;
     list-style: none;
     flex-wrap:wrap;
     justify-content: left;
 }
+
 li {
     margin: 20px;
-
 }
+
 a {
     color: $white;
     text-decoration: none;
+    font-size: $normalFontSize;
 }
 
 a:hover {
@@ -37,6 +29,96 @@ a:hover {
 }
 
 .selected {
-    border-bottom: 2px solid $yellow;
+    border-bottom: 2px solid $yellow;    
+}
+
+h1 {
+    font-size: $bigheadingFontSize;
+    color: $white;
+}
+
+span {
+    width: 280px;
+    // display: inline-block;
+    box-sizing:border-box;
+    background-color: $white;
+    color: black;
+    font-size: $bigheadingFontSize;
     
+}
+.weirdh1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+    justify-content: space-around;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.sidepicture {
+    position: absolute;
+    width: 50%;
+    height: 45%;
+    top: 20%;
+    right: 0
+}
+
+// Home Section
+.homeSection {
+    background-color: $pine;
+    color: $white;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.box1, .box2, .box3, .box4 {
+    width: calc(45% - 60px);
+    padding : 0 60px;
+
+}
+.box1::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f3c5";
+    display: inline-block;
+    color: black;
+    font-size: $normalFontSize;
+    border-radius: 50%;
+    border: 2px solid $yellow;
+    background-color: $yellow;
+}
+.box2::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0c0";
+    color: black;
+    font-size: $normalFontSize;
+    border-radius: 50%;
+    border: 2px solid $yellow;
+    background-color: $yellow;
+}
+
+.box3::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f15b";
+    color: black;
+    font-size: $normalFontSize;
+    border-radius: 50%;
+    border: 2px solid $yellow;
+    background-color: $yellow;
+}
+
+.box4::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f095";
+    color: black;
+    font-size: $normalFontSize;
+    border-radius: 50%;
+    border: 2px solid $yellow;
+    background-color: $yellow;
+}
+
+// Best Burger Section
+.bestBurger-section {
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+.columnleft {
 }

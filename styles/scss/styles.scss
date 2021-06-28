@@ -1,6 +1,12 @@
 @import 'variables';
 @import 'setup';
 @import './partials/home';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+}
 
 .visuallyHidden:not(:focus):not(:active) {
     position: absolute;
