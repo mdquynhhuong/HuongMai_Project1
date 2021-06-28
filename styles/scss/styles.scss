@@ -1,11 +1,54 @@
 @import 'variables';
 @import 'setup';
 @import './partials/home';
+@import './partials/blog';
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 
 html {
     margin: 0;
     padding: 0;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: $headFontSize;
+    color: $white;
+}
+
+footer {
+    background-color:$almostblack;
+    font-size: $normalFontSize;
+    color: $white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+footer p{
+    margin:0;
+}
+
+ul {
+    margin: 0;
+    display: flex;
+    list-style: none;
+    flex-wrap:wrap;
+    justify-content: left;
+}
+
+li {
+    margin: 20px;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+    font-size: $normalFontSize;
+}
+
+a:hover {
+    color: $yellow;
+}
+
+.selected {
+    border-bottom: 2px solid $yellow;    
 }
 
 .visuallyHidden:not(:focus):not(:active) {

@@ -5,31 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+
+    <link rel="stylesheet" href="./styles/styles.css">
+
 </head>
 <body>
     <!-- Header Section -->
-    <header>
+    <header class="blogHeader">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html">About</a></li>
-                <li><a class="seclected" href="blog.html">Blog</a></li>
+                <li><a class="selected" href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <h1>Blog</h1>
     </header>
-    
+<main>    
     <!-- Middle Section -->
+    <img class="randomImg" src="./the-restaurant-mall-assets/blog-side-image.jpg" alt="salmon dish">
+
     <section class="middle-section">
         <!-- Featured Restaurants Section -->
         <section class="featuredRestaurant-section">
-            <img src="./the-restaurant-mall-assets/blog-side-image.jpg" alt="salmon dish">
-            <div class="wrapper">
+            <div class="wrapper1">
                 <h4>Featured Restaurants</h4>
                 <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elmentum. Find out more.</p>        
             </div>
-            <div class="wrapper">
+            <div class="wrapper2">
                 <h4>Recent posts</h4>
                 <ul>
                     <li>Donec facilisis tortor ut</li>
@@ -42,7 +46,7 @@
 
         <!--Employment section -->
         <section class="employment-section">
-            <img src="./the-restaurant-mall-assets/blog-side-image.jpg" alt="waiter cleaning the table">
+            <img src="./the-restaurant-mall-assets/blog-post-image.jpg" alt="waiter cleaning the table">
             <div class="wrapper">
                 <h3> Employment Opportunities</h3>
                 <p>Monday October 30, 2019 by Sulaire</p>
@@ -88,6 +92,7 @@
             <input type="submit" value="Post Comment">
         </form>
     </section>
+</main>
     <!-- Footer Section -->
     <footer>
         <p>Copyright © 2019 Juno College</p>

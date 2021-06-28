@@ -6,37 +6,6 @@
     height: 50vh;
 }
 
-ul {
-    margin: 0;
-    display: flex;
-    list-style: none;
-    flex-wrap:wrap;
-    justify-content: left;
-}
-
-li {
-    margin: 20px;
-}
-
-a {
-    color: $white;
-    text-decoration: none;
-    font-size: $normalFontSize;
-}
-
-a:hover {
-    color: $yellow;
-}
-
-.selected {
-    border-bottom: 2px solid $yellow;    
-}
-
-h1 {
-    font-size: $bigheadingFontSize;
-    color: $white;
-}
-
 span {
     width: 280px;
     // display: inline-block;
@@ -71,7 +40,12 @@ span {
     padding-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
-    
+}
+.homeSection h2 {
+    font-weight: 700;
+    font-size: $bigheadingFontSize;
+    font-family: $baseFont;
+    text-transform: uppercase;
 }
 .box1, .box2, .box3, .box4 {
     width: calc(45% - 60px);
@@ -118,7 +92,110 @@ span {
 .bestBurger-section {
     display: flex; 
     justify-content: space-evenly;
+    background-color: $almostblack;
+    color: $white;
+    position: relative;
+    height: 70vh;
+    font-size: $baseFont;
+}
+.bestBurger-section h2{
+    font-size:$bigheadingFontSize;
+    text-transform: uppercase;
 }
 
-.columnleft {
+.columnleft, .columnright {
+    width: 45%;
+    padding: 0 30px;
+    // position:relative;
 }
+.columnleftWrapper {
+    width: 45%;
+    position: absolute;
+    bottom: 0;
+    padding: 0 120px 40px 0;
+    text-align: right;
+}
+.columnrightWrapper {
+    width: 42%;
+    position: absolute;
+    padding: 15px 0 0 30px;
+}
+.columnleft img {
+    position: absolute;
+    width: 42%;
+    top: -60px;
+    left: 0;
+    border-right: 8px solid $yellow;
+    border-bottom: 8px solid $yellow;
+}
+
+.columnright img {
+    position: absolute;
+    width: 45%;
+    bottom: -60px;
+    right: 0;
+    border-left: 8px solid $yellow; 
+    border-bottom: 8px solid $yellow;
+}
+.bestBurger-section button {
+    background-color: $yellow;
+    font-size: $buttonFontSize;
+    text-transform: uppercase;
+    border: 0px;
+}
+
+// Gift Card Section
+.giftcard-section {
+    text-align: center;
+    padding: 70px 30px;
+    background-color: $pine;
+    color: $white;
+    font-size: $baseFont;
+}
+
+.giftcard-section h3{
+    font-size: $bigheadingFontSize;
+    color: $yellow;
+}
+
+.giftcard-section button {
+    background-color: black;
+    font-size: $buttonFontSize;
+    color: $white;
+    border: 0;
+}
+// Random Image Setion
+.randomImage {
+    width: 100%;
+}
+// Nature in Space Section
+.nature-section {
+    display: flex;
+    background-color: $pine;
+    padding: 30px;
+    font-size: $baseFont;
+    color: $white;
+}
+.nature-section div {
+    padding-left: 50px;
+}
+.nature-section h3{
+    text-transform: uppercase;
+    color: $yellow;
+    font-size: $bigheadingFontSize;
+}
+.nature-section button {
+    background-color: black;
+    font-size: $buttonFontSize;
+    color: $white;
+    border: 0;
+}
+
+// Gallery Section
+.gallery-section {
+    background-color: $almostblack;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+

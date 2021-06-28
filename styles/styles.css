@@ -244,42 +244,6 @@ html {
   height: 50vh;
 }
 
-ul {
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-}
-
-li {
-  margin: 20px;
-}
-
-a {
-  color: #FFFFFF;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-a:hover {
-  color: #FFD300;
-}
-
-.selected {
-  border-bottom: 2px solid #FFD300;
-}
-
-h1 {
-  font-size: 40px;
-  color: #FFFFFF;
-}
-
 span {
   width: 280px;
   -webkit-box-sizing: border-box;
@@ -322,6 +286,13 @@ span {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.homeSection h2 {
+  font-weight: 700;
+  font-size: 40px;
+  font-family: "JosefinSans", sans-serif;
+  text-transform: uppercase;
 }
 
 .box1, .box2, .box3, .box4 {
@@ -381,11 +352,238 @@ span {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  background-color: #171B0E;
+  color: #FFFFFF;
+  position: relative;
+  height: 70vh;
+  font-size: "JosefinSans", sans-serif;
+}
+
+.bestBurger-section h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.columnleft, .columnright {
+  width: 45%;
+  padding: 0 30px;
+}
+
+.columnleftWrapper {
+  width: 45%;
+  position: absolute;
+  bottom: 0;
+  padding: 0 120px 40px 0;
+  text-align: right;
+}
+
+.columnrightWrapper {
+  width: 42%;
+  position: absolute;
+  padding: 15px 0 0 30px;
+}
+
+.columnleft img {
+  position: absolute;
+  width: 42%;
+  top: -60px;
+  left: 0;
+  border-right: 8px solid #FFD300;
+  border-bottom: 8px solid #FFD300;
+}
+
+.columnright img {
+  position: absolute;
+  width: 45%;
+  bottom: -60px;
+  right: 0;
+  border-left: 8px solid #FFD300;
+  border-bottom: 8px solid #FFD300;
+}
+
+.bestBurger-section button {
+  background-color: #FFD300;
+  font-size: 22.4px;
+  text-transform: uppercase;
+  border: 0px;
+}
+
+.giftcard-section {
+  text-align: center;
+  padding: 70px 30px;
+  background-color: #2B331B;
+  color: #FFFFFF;
+  font-size: "JosefinSans", sans-serif;
+}
+
+.giftcard-section h3 {
+  font-size: 40px;
+  color: #FFD300;
+}
+
+.giftcard-section button {
+  background-color: black;
+  font-size: 22.4px;
+  color: #FFFFFF;
+  border: 0;
+}
+
+.randomImage {
+  width: 100%;
+}
+
+.nature-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #2B331B;
+  padding: 30px;
+  font-size: "JosefinSans", sans-serif;
+  color: #FFFFFF;
+}
+
+.nature-section div {
+  padding-left: 50px;
+}
+
+.nature-section h3 {
+  text-transform: uppercase;
+  color: #FFD300;
+  font-size: 40px;
+}
+
+.nature-section button {
+  background-color: black;
+  font-size: 22.4px;
+  color: #FFFFFF;
+  border: 0;
+}
+
+.gallery-section {
+  background-color: #171B0E;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.blogHeader {
+  background-image: url(../the-restaurant-mall-assets/blog-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+}
+
+.blogHeader h1 {
+  padding-left: 60px;
+}
+
+.randomImg {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  top: 750px;
+  left: 0;
+}
+
+main {
+  background-color: #2B331B;
+}
+
+main h3 {
+  font-size: 40px;
+  color: #FFD300;
+}
+
+main h4 {
+  font-size: 25px;
+  color: #FFD300;
+}
+
+main p {
+  font-size: "JosefinSans", sans-serif;
+  color: white;
+}
+
+main ul {
+  list-style-type: circle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main li {
+  margin: 0;
+  color: white;
+  font-size: "JosefinSans", sans-serif;
+}
+
+.middle-section {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 html {
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 45px;
+  color: #FFFFFF;
+}
+
+footer {
+  background-color: #171B0E;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+footer p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+li {
+  margin: 20px;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+a:hover {
+  color: #FFD300;
+}
+
+.selected {
+  border-bottom: 2px solid #FFD300;
 }
 
 .visuallyHidden:not(:focus):not(:active) {

@@ -1,0 +1,50 @@
+.blogHeader {
+    background-image: url(../the-restaurant-mall-assets/blog-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
+.blogHeader h1 {
+    padding-left: 60px;
+}
+// The Image
+.randomImg {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 750px;
+    left: 0;
+}
+// Main Section
+main {
+    background-color: $pine;
+}
+main h3 {
+    font-size: $bigheadingFontSize;
+    color: $yellow;
+}
+main h4 {
+    font-size: $smallheadingFontSize;
+    color: $yellow;
+}
+main p {
+    font-size: $baseFont;
+    color: white;
+}
+main ul {
+    list-style-type: circle;
+    display: flex;
+    flex-direction: column;
+}
+main li {
+    margin: 0;
+    color: white;
+    font-size: $baseFont;
+}
+
+// Middle Section
+.middle-section {
+    padding-top: 30px;
+    display: flex;
+}
+
