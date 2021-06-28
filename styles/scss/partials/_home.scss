@@ -1,3 +1,42 @@
 header {
     background-image: url(../the-restaurant-mall-assets/home-header.jpg);
 }
+
+.box1::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f3c5";
+}
+.box2::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0c0";
+}
+
+.box3::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f15b";
+}
+
+.box4::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f095";
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    flex-wrap:wrap;
+    justify-content: left;
+}
+li {
+    margin: 20px;
+
+}
+a {
+    color: $white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $yellow;
+}
+
+.selected {
+    border-bottom: 2px solid $yellow;
+    
+}
