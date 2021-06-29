@@ -1,0 +1,41 @@
+.contactHeader {
+    background-image :url(../the-restaurant-mall-assets/contact-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh; 
+}
+
+// Info Section
+
+.info_Section {
+    background-color: $pine;
+    font-size: $baseFont;
+    color: white;
+    padding: 50px;
+}
+.social_Media ul {
+    padding: 0;
+}
+.social_Media a{
+    color: $yellow;
+}
+.info_Section p {
+    margin-left: 15px;
+}
+.contact_Info p{
+    margin: 0 15px;
+}
+
+// Form Section - Position Form
+
+.formPosition {
+    width: 45%;
+    height: auto;
+    padding: 15px 5px;
+    background-color: $pine;
+    border-right: 8px solid $yellow;
+    border-bottom: 8px solid $yellow;
+    position: absolute;
+    right: 50px;
+    top: 350px;
+}

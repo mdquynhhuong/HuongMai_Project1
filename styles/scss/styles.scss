@@ -2,28 +2,71 @@
 @import 'setup';
 @import './partials/home';
 @import './partials/blog';
+@import './partials/contact';
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 
 html {
     margin: 0;
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
+
 }
 h1 {
     text-transform: uppercase;
+    font-weight: bolder;
     font-size: $headFontSize;
     color: $white;
+    padding-left: 50px;
 }
 // Form Section
-
+form {
+    text-align: left;
+}
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+input[type=text], 
+input[type=email]
+{
+    height: 48px;
+    background-color: $pine;
+    color: $white;
+    padding: 0 13px;
+    width: 45%;
+    margin: 10px;
+    border:0;
+    border-bottom :2px solid $yellow;
+}
+textarea {
+    height: 100px;
+    margin: 10px;
+    width: 95%;
+    padding: 5px 13px 0;
+    background-color: $pine;
+    color: white;
+    border: 2px solid $yellow;
+}
+input[type=submit] {
+    width: 95%;
+    font-size: $buttonFontSize;
+    text-transform: uppercase;
+    color: black;
+    background-color: $yellow;
+    border: 0;
+    padding: 0;
+    margin: 0 10px;
+}
 
 // Footer Section
 footer {
-    background-color:$almostblack;
+    background-color: black;
     font-size: $normalFontSize;
     color: $white;
     text-align: center;
-    padding-bottom: 10px;
+    padding: 10px 0;
 }
 footer p{
     margin:0;
