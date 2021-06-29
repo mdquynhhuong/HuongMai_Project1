@@ -510,7 +510,7 @@ main h3 {
 }
 
 main h4 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 25px;
   color: #FFD300;
 }
@@ -545,6 +545,10 @@ main li {
   background-color: #171B0E;
   margin: 60px 60px;
   padding: 150px 0 20px 20px;
+}
+
+.featuredRestaurant-section p {
+  margin-top: 0;
 }
 
 .columnRight {
