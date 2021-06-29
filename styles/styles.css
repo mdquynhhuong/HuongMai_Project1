@@ -237,7 +237,7 @@ html {
   overflow: hidden;
 }
 
-.homeheader {
+.homeHeader {
   background-image: url(../the-restaurant-mall-assets/home-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -280,13 +280,16 @@ span {
 .homeSection {
   background-color: #2B331B;
   color: #FFFFFF;
-  padding-top: 100px;
+  padding-top: 130px;
   padding-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .homeSection h2 {
@@ -298,7 +301,8 @@ span {
 
 .box1, .box2, .box3, .box4 {
   width: calc(45% - 60px);
-  padding: 0 60px;
+  padding: 0 30px;
+  position: relative;
 }
 
 .box1::before {
@@ -311,6 +315,10 @@ span {
   border-radius: 50%;
   border: 2px solid #FFD300;
   background-color: #FFD300;
+  position: absolute;
+  left: -15px;
+  top: 35px;
+  padding: 10px;
 }
 
 .box2::before {
@@ -322,6 +330,10 @@ span {
   border-radius: 50%;
   border: 2px solid #FFD300;
   background-color: #FFD300;
+  position: absolute;
+  left: -25px;
+  top: 35px;
+  padding: 10px;
 }
 
 .box3::before {
@@ -333,6 +345,10 @@ span {
   border-radius: 50%;
   border: 2px solid #FFD300;
   background-color: #FFD300;
+  position: absolute;
+  left: -15px;
+  top: 35px;
+  padding: 10px;
 }
 
 .box4::before {
@@ -344,6 +360,10 @@ span {
   border-radius: 50%;
   border: 2px solid #FFD300;
   background-color: #FFD300;
+  position: absolute;
+  left: -25px;
+  top: 35px;
+  padding: 10px;
 }
 
 .bestBurger-section {
@@ -471,6 +491,96 @@ span {
           justify-content: space-evenly;
 }
 
+@media (max-width: 420px) {
+  .homeHeader {
+    background-size: cover;
+    height: auto;
+  }
+
+  ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .weirdh1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+  }
+
+  .weirdh1 span {
+    width: auto;
+    font-size: 25px;
+  }
+
+  .sidepicture {
+    display: none;
+  }
+
+  .homeSection {
+    padding: 20px 20px 20px 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .homeSection div {
+    width: 85%;
+  }
+
+  .homeSection h2 {
+    font-size: 20px;
+  }
+
+  .box1::before, .box2::before, .box3::before, .box4::before {
+    top: 10px;
+  }
+
+  .bestBurger-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+    height: auto;
+    text-align: center;
+  }
+
+  .bestBurger-section img {
+    position: static;
+  }
+
+  .columnleft, .columnright, .columnleftWrapper, .columnrightWrapper {
+    padding: 0 0 10px 15px;
+    text-align: center;
+    height: auto;
+    overflow: hidden;
+    position: static;
+    width: 95%;
+  }
+
+  .nature-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .nature-section div {
+    text-align: left;
+  }
+
+  .gallery-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .blogHeader {
   background-image: url(../the-restaurant-mall-assets/blog-header.jpg);
   background-repeat: no-repeat;
@@ -555,8 +665,8 @@ main li {
 .employment-section img {
   position: absolute;
   display: block;
-  border-left: 8px solid #FFD300;
-  border-bottom: 8px solid #FFD300;
+  border-left: 10px solid #FFD300;
+  border-bottom: 10px solid #FFD300;
   width: 60%;
   height: 50vh;
   right: 0;
@@ -596,6 +706,53 @@ main li {
   font-weight: 700;
 }
 
+@media (max-width: 420px) {
+  .blogHeader {
+    height: auto;
+    background-image: contain;
+  }
+
+  .blogHeader h1 {
+    position: absolute;
+    top: 70px;
+    right: 50px;
+  }
+
+  .randomImg {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .featuredRestaurant-section, .columnRight {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+    margin: 30px;
+  }
+
+  .wrapper1, .wrapper2 {
+    width: 95%;
+  }
+
+  .employment-section img {
+    position: static;
+    width: 100%;
+  }
+
+  .employment_Info {
+    margin-top: 20px;
+  }
+}
 .contactHeader {
   background-image: url(../the-restaurant-mall-assets/contact-header.jpg);
   background-repeat: no-repeat;
@@ -629,8 +786,8 @@ main li {
 .formPosition {
   width: 45%;
   height: auto;
-  padding: 15px 5px;
-  background-color: #2B331B;
+  padding: 20px 10px;
+  background-color: #171B0E;
   border-right: 8px solid #FFD300;
   border-bottom: 8px solid #FFD300;
   position: absolute;
@@ -638,6 +795,38 @@ main li {
   top: 350px;
 }
 
+@media (max-width: 420px) {
+  .contactHeader {
+    background-size: cover;
+    height: auto;
+  }
+
+  .contactHeader h1 {
+    position: absolute;
+    top: 80px;
+    right: 30px;
+  }
+
+  .info_Section {
+    text-align: center;
+  }
+
+  .social_Media ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .formPosition {
+    position: static;
+    width: 100%;
+    border: 0;
+  }
+}
 html {
   margin: 0;
   padding: 0;
@@ -751,4 +940,31 @@ a:hover {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (max-width: 420px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3, h4 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  button {
+    font-size: 12px;
+  }
+
+  input[type=text],
+input[type=email] {
+    width: 95%;
+  }
 }

@@ -1,5 +1,5 @@
 // Header Section
-.homeheader {
+.homeHeader {
     background-image: url(../the-restaurant-mall-assets/home-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,10 +37,11 @@ span {
 .homeSection {
     background-color: $pine;
     color: $white;
-    padding-top: 100px;
+    padding-top: 130px;
     padding-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .homeSection h2 {
     font-weight: 700;
@@ -50,7 +51,8 @@ span {
 }
 .box1, .box2, .box3, .box4 {
     width: calc(45% - 60px);
-    padding : 0 60px;
+    padding : 0 30px;
+    position: relative;
 
 }
 .box1::before {
@@ -61,6 +63,10 @@ span {
     border-radius: 50%;
     border: 2px solid $yellow;
     background-color: $yellow;
+    position: absolute;
+    left: -15px;
+    top: 35px;
+    padding: 10px;
 }
 .box2::before {
     font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0c0";
@@ -69,6 +75,10 @@ span {
     border-radius: 50%;
     border: 2px solid $yellow;
     background-color: $yellow;
+    position: absolute;
+    left: -25px;
+    top: 35px;
+    padding: 10px;
 }
 
 .box3::before {
@@ -78,6 +88,10 @@ span {
     border-radius: 50%;
     border: 2px solid $yellow;
     background-color: $yellow;
+    position: absolute;
+    left: -15px;
+    top: 35px;
+    padding: 10px;
 }
 
 .box4::before {
@@ -87,6 +101,10 @@ span {
     border-radius: 50%;
     border: 2px solid $yellow;
     background-color: $yellow;
+    position: absolute;
+    left: -25px;
+    top: 35px;
+    padding: 10px;
 }
 
 // Best Burger Section
@@ -200,3 +218,71 @@ span {
     justify-content: space-evenly;
 }
 
+// Media Query for Home
+@media (max-width: 420px) {
+    
+    .homeHeader {
+        background-size: cover;
+        height: auto;
+        
+    }
+    ul {
+        flex-direction: column;
+    }
+    .weirdh1 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: right; 
+    }
+    .weirdh1 span {
+        width:auto;
+        font-size: $mediaHeadFontSize;
+    }
+    .sidepicture {
+        display: none;
+    }
+    // Home Section
+    .homeSection {
+        padding: 20px 20px 20px 50px;
+        flex-direction: column;
+    }
+    .homeSection div {
+        width: 85%;
+    }
+    .homeSection h2 {
+        font-size: $mediaHeadingFontSize;
+    }
+    .box1::before, .box2::before, .box3::before, .box4::before {
+        top: 10px;
+    }
+
+    .bestBurger-section {
+        flex-direction: column;
+        overflow: hidden;
+        height: auto;
+        text-align: center;
+    }
+    .bestBurger-section img {
+        position:static;
+    }
+    .columnleft, .columnright, .columnleftWrapper,.columnrightWrapper {
+        padding: 0 0 10px 15px;
+        text-align:center;
+        height: auto;
+        overflow: hidden;
+        position: static;
+        width: 95%;
+    }
+    // Nature in Space Section 
+    .nature-section {
+        flex-direction: column;
+    }
+    .nature-section div {
+        text-align: left;
+    }
+    // Gallery Section
+    .gallery-section {
+        flex-direction:column;
+    }
+}

@@ -68,8 +68,8 @@ main li {
 .employment-section img {
     position: absolute;
     display:block;
-    border-left: 8px solid $yellow;
-    border-bottom: 8px solid $yellow;
+    border-left: 10px solid $yellow;
+    border-bottom: 10px solid $yellow;
     width: 60%;
     height: 50vh;
     right: 0;
@@ -103,4 +103,46 @@ main li {
     font-weight: 700;
 }
 
+// Media Queries
 
+@media (max-width: 420px) {
+    // Header Section
+    .blogHeader {
+        height: auto;
+        background-image: contain;
+    }
+    .blogHeader h1 {
+        position: absolute;
+        top: 70px;
+        right: 50px;
+    }
+    .randomImg {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+    // Featured Restaurant Section
+    .main {
+        flex-direction: column;
+    }
+    .featuredRestaurant-section,.columnRight {
+        width: 100%;
+        padding: 10px;
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+        margin: 30px;
+    }
+    .wrapper1, .wrapper2 {
+        width: 95%;
+    }
+    
+    // employment section
+    .employment-section img {
+        position: static;
+        width: 100%;
+    }
+    .employment_Info {
+        margin-top: 20px;
+    }
+}
