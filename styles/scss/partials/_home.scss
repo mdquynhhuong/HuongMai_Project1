@@ -5,7 +5,42 @@
     background-size: cover;
     height: 50vh;
 }
+.hamburgermenu {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid blakc;
+    background: white;
+    cursor:pointer;
+}
 
+.menuIcon {
+    background-color: $pine;
+    color: white;
+    width: 15px;
+    height: 10px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+    background: black;
+    color: white;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    list-style: none;
+    padding-top: 4rem;
+}
+.showMenu {
+    transform: translateY(0);
+}
 span {
     width: 280px;
     // display: inline-block;
