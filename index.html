@@ -18,6 +18,7 @@
     <header class="homeHeader">
         <button class="hamburgermenu">
             <span class="menuIcon material-icons">menu</span>
+            <span class="xIcon material-icons">close</span>
         </button>
         <nav>
             <ul class="menu">
@@ -77,9 +78,20 @@
 
     <!-- Gift Card Section -->
     <Section class="giftcard-section">
-        <h3>Win a $100 gift card</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem sunt sequi quasi, doloremque quidem iste illo? Sunt autem reiciendis velit distinctio amet accusamus. Eligendi placeat iste odit, quas dolorum doloribus?</p>
-        <button>Find out more</button>
+        <div class="text">
+            <h3>Win a $100 gift card</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem sunt sequi quasi, doloremque quidem iste illo? Sunt autem reiciendis velit distinctio amet accusamus. Eligendi placeat iste odit, quas dolorum doloribus?</p>
+            <button class = "styledButton openModal">Find out more</button>
+
+        </div>
+        <div id ="myModal" class="modalContainer">
+            <div class="modal-content">
+                <h3>Win a $100 gift card Infomation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente minima animi obcaecati, vitae, optio earum fuga laborum accusamus, perspiciatis incidunt qui! Doloremque quo similique rerum exercitationem magnam voluptas pariatur!
+                </p>
+                <span class="close">&times;</span>
+            </div>    
+        </div>
     </Section>
     <!-- Random image section -->
     <img class="randomImage" src="./the-restaurant-mall-assets/banner.jpg" alt="coffee shop">
@@ -87,10 +99,18 @@
     <!-- Nature in Space Section -->
     <section class="nature-section">
         <img src="./the-restaurant-mall-assets/square-image.jpg" alt="coffee shop with plants">
-        <div>
+        <div class="text">
             <h3>Bring Nature in spaces</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam molestiae omnis vero incidunt culpa quibusdam minima labore ab quasi provident similique est nulla eos quisquam unde repudiandae, saepe excepturi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam architecto reiciendis consequatur eius iure exercitationem laborum ipsa. Tempore ipsa dignissimos tempora qui, repellendus corrupti mollitia eum veritatis, officia id repellat.</p>
-            <Button>Find out more</Button>
+            <button class="styledButton openModal">Find out more</button>
+        </div>
+        <div id ="myModal" class="modalContainer">
+            <div class="modal-content">
+                <h3>Bring the Nature in Spaces Information</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente minima animi obcaecati, vitae, optio earum fuga laborum accusamus, perspiciatis incidunt qui! Doloremque quo similique rerum exercitationem magnam voluptas pariatur!
+                </p>
+                <span class="close">&times;</span>
+            </div>    
         </div>
     </section>
 
