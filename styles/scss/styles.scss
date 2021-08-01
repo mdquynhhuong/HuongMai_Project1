@@ -18,6 +18,7 @@ h1 {
     color: $white;
     padding-left: 50px;
 }
+
 // Form Section
 form {
     text-align: left;
@@ -112,7 +113,13 @@ a:hover {
 }
 
 // Media Section
+@media (min-width: 421px) {
+    header button {
+        display: none;
+    }
+}
 @media (max-width: 420px) {
+
     h1 {
         font-size: $mediaHeadFontSize;
     }
@@ -131,5 +138,49 @@ a:hover {
     input[type=text], 
     input[type=email] {
         width: 95%;
+    }
+    .hamburgermenu {
+        position: fixed;
+        z-index: 100;
+        top: 1;
+        left: 1;
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid black;
+        background-color: black;
+        // cursor:pointer;
+    }
+    
+    .material-icons {
+        background-color: black;
+        color: white;
+        width: 15px;
+        height: 10px;
+    }
+    .xIcon {
+        display: none;
+    }
+    
+    .menu {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        color: white;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        list-style: none;
+        padding-top: 20px;
+    }
+    .showMenu {
+        transform: translateY(0);
+    }
+    .menuLink {
+        display: inline;
+        font-size: 2rem;
+        color: white;
+        text-decoration: none;
     }
 }
